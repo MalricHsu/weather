@@ -1,0 +1,111 @@
+/* 基本頁面樣式 */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* 包覆整個內容的容器 */
+.wrapper {
+  min-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* 標題 */
+h1 {
+  color: #4a5a6a;
+  margin-bottom: 1.5rem;
+}
+
+/* 輸入區塊 Flex 排列 */
+.search-bar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+/* 輸入框 */
+input {
+  max-width: 300px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border-radius: 4px;
+  color: #333;
+}
+
+/* 查詢按鈕 */
+button {
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  background-color: #d1d8de;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+button:hover {
+  background-color: #bfc9d4;
+}
+
+/* 天氣顯示區塊 */
+.weather {
+  background-color: #ffffff;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.weather img {
+  width: 100px;
+  height: auto;
+}
+
+.weather p {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+/* 隱藏時使用 */
+.hidden {
+  display: none;
+}
+
+/* 頁尾 */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e0e6eb;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #444;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+}
+
+.footer p {
+  font-size: 0.85rem;
+  color: #555;
+}
+.footer a {
+  color: #5a6b7a;
+  text-decoration: none;
+}
